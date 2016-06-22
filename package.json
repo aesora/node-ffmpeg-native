@@ -1,0 +1,25 @@
+{
+  "name": "ffmpeg-native",
+  "version": "0.1.0",
+  "description": "FFMPEG bindings for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild",
+    "precommit": "grunt",
+    "style": "node-cpplint --filters build-include --linelength 500 src/*.h src/*.cpp"
+  },
+  "author": "Matthias Breithaupt",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.3.5"
+  },
+  "devDependencies": {
+    "david": "^7.0.2",
+    "grunt": "^1.0.1",
+    "grunt-david": "^0.7.0",
+    "grunt-nsp": "^2.2.0",
+    "node-cpplint": "^0.4.0",
+    "nsp": "^2.4.0"
+  }
+}
